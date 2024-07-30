@@ -1,0 +1,4 @@
+#!/bin/sh
+cp -n .guile ~
+export GUILE_AUTO_COMPILE=0
+guile "$@"

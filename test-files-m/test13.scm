@@ -1,0 +1,7 @@
+(letrec ((is-even? (lambda (n)
+                       (or (= n 0)
+                           (is-odd? (- n 1)))))
+           (is-odd? (lambda (n)
+                      (and (> n 0)
+                           (is-even? (- n 1))))))
+    (is-odd? 11))
